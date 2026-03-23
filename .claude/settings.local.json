@@ -4,7 +4,14 @@
       "Bash(findstr /C:\"HEADLINE\" /C:\"Agencia\" /C:\"Soluciona\")",
       "Bash(git init)",
       "Bash(git remote add origin https://github.com/Sevenatila/agencia-soluciona.git)",
-      "Bash(git add .)"
+      "Bash(git add .)",
+      "Bash(git config user.email \"sevenatila@gmail.com\")",
+      "Bash(git config user.name \"Sevenatila\")",
+      "Bash(git commit -m \"$(cat <<''EOF''\nLanding page Agência Soluciona - Design preto e amarelo\n\n✨ Features:\n- Hero section com fundo preto e CTAs amarelos\n- Logos dos clientes em formato circular\n- Seção da equipe com foto oficial\n- Formulário de captura otimizado\n- Design responsivo mobile-first\n- Integração com logos oficiais da empresa\n\n🎨 Design System:\n- Paleta: Preto primário, amarelo para destaques\n- Tipografia: Poppins\n- Logos dos clientes com efeito hover\n- Animações suaves ao scroll\n\n📱 Otimizações:\n- 100% responsivo\n- Máscaras de formulário\n- Contador de urgência\n- SEO otimizado\n\n🤖 Generated with Claude Code\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git branch -M main)",
+      "Bash(git push -u origin main)",
+      "Bash(git add -A)",
+      "Bash(git commit -m \"Melhorias no design dos logos circulares\n\n- Aumentado tamanho dos containers (120px → 140px)\n- Borda mais espessa (3px → 4px) e cor mais suave\n- Adicionado box-shadow sutil por padrão\n- Logo interno também com border-radius 50%\n- Reduzido tamanho máximo interno (80% → 70%) para melhor espaçamento\n- Efeito hover aprimorado com scale na imagem interna\")"
     ],
     "deny": [],
     "ask": []
