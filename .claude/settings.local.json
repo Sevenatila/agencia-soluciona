@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(findstr /C:\"HEADLINE\" /C:\"Agencia\" /C:\"Soluciona\")",
+      "Bash(git init)",
+      "Bash(git remote add origin https://github.com/Sevenatila/agencia-soluciona.git)",
+      "Bash(git add .)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
