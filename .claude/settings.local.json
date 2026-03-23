@@ -13,7 +13,8 @@
       "Bash(git add -A)",
       "Bash(git commit -m \"Melhorias no design dos logos circulares\n\n- Aumentado tamanho dos containers (120px → 140px)\n- Borda mais espessa (3px → 4px) e cor mais suave\n- Adicionado box-shadow sutil por padrão\n- Logo interno também com border-radius 50%\n- Reduzido tamanho máximo interno (80% → 70%) para melhor espaçamento\n- Efeito hover aprimorado com scale na imagem interna\")",
       "Bash(git push)",
-      "Bash(git commit -m \"Carrossel horizontal de logos dos clientes\n\n✨ Novo layout:\n- Logos agora em scroll horizontal\n- Todos os 12 logos em linha única\n- Scroll suave com touch support\n- Barra de scroll oculta para design limpo\n- Adicionados logos adicionais que não apareciam\n\n📱 Mobile-friendly:\n- Scroll touch otimizado para mobile\n- Flexbox com flex-shrink-0 \n- Gap consistente entre logos\")"
+      "Bash(git commit -m \"Carrossel horizontal de logos dos clientes\n\n✨ Novo layout:\n- Logos agora em scroll horizontal\n- Todos os 12 logos em linha única\n- Scroll suave com touch support\n- Barra de scroll oculta para design limpo\n- Adicionados logos adicionais que não apareciam\n\n📱 Mobile-friendly:\n- Scroll touch otimizado para mobile\n- Flexbox com flex-shrink-0 \n- Gap consistente entre logos\")",
+      "Bash(git commit -m \"Trust badges com scroll automático horizontal\n\n✨ Features:\n- Badges agora em carrossel horizontal\n- Scroll automático infinito (20s por ciclo)\n- Pausa no hover para interação\n- Badges com design moderno (pills escuras)\n- Ícones amarelos para destaque\n- 6 badges + duplicatas para efeito infinito\n\n🎨 Design:\n- Background cinza escuro com bordas\n- Texto cinza claro\n- Ícones amarelos (#fbbf24)\n- Animação suave e contínua\n\n📱 UX:\n- Scroll infinito sem interrupção\n- Hover pausa a animação\n- Mobile-friendly\")"
     ],
     "deny": [],
     "ask": []
