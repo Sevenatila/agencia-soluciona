@@ -930,7 +930,11 @@
         document.getElementById('captureForm').addEventListener('submit', function(e) {
             e.preventDefault();
 
-            // Coletar dados do formulário
+            const submitBtn = this.querySelector('[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Enviando...';
+            submitBtn.disabled = true;
+
             const formData = {
                 name: document.getElementById('name').value,
                 email: document.getElementById('email').value,
@@ -940,14 +944,26 @@
                 challenge: document.getElementById('challenge').value
             };
 
-            // Aqui você pode adicionar integração com seu sistema
-            console.log('Dados do formulário:', formData);
+            const SHEET_URL = 'https://script.google.com/macros/s/AKfycbykCuRU5q1_1CHu8SxIosUAPBJ3dfq7Hm05IxROj2awQ0N3r1_hVGOaNEJzjP6U6h53/exec';
 
-            // Mensagem de sucesso
-            alert('Parabéns! Sua vaga está garantida. Em instantes um especialista entrará em contato via WhatsApp.');
-
-            // Limpar formulário
-            this.reset();
+            fetch(SHEET_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            })
+            .then(function() {
+                alert('Parabéns! Sua vaga está garantida. Em instantes um especialista entrará em contato via WhatsApp.');
+                document.getElementById('captureForm').reset();
+            })
+            .catch(function(err) {
+                console.error('Erro ao enviar:', err);
+                alert('Ocorreu um erro ao enviar. Tente novamente.');
+            })
+            .finally(function() {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            });
         });
 
         // Animação ao scroll
