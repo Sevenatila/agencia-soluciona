@@ -961,15 +961,18 @@
 
             const SHEET_URL = 'https://script.google.com/macros/s/AKfycbykCuRU5q1_1CHu8SxIosUAPBJ3dfq7Hm05IxROj2awQ0N3r1_hVGOaNEJzjP6U6h53/exec';
 
-            // Envia em segundo plano sem esperar resposta
-            fetch(SHEET_URL, {
-                method: 'POST',
-                mode: 'no-cors',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(formData)
-            }).catch(function(err) {
-                console.error('Erro ao enviar:', err);
-            });
+            // Envia via sendBeacon (garante envio mesmo ao fechar a página)
+            var payload = JSON.stringify(formData);
+            if (navigator.sendBeacon) {
+                navigator.sendBeacon(SHEET_URL, new Blob([payload], { type: 'application/json' }));
+            } else {
+                fetch(SHEET_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: payload
+                }).catch(function(err) { console.error('Erro ao enviar:', err); });
+            }
 
             // Mostra sucesso imediatamente
             setTimeout(function() {
