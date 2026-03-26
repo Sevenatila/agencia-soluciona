@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Soluciona | Transforme Suas Vendas em Resultados Extraordinários</title>
+    <meta name="description" content="Agência especializada em estratégias de vendas e marketing digital. Transformamos empresas em máquinas de vendas com metodologia comprovada e resultados garantidos.">
+    <meta name="keywords" content="agência de marketing, consultoria de vendas, marketing digital, estratégias de vendas, alta performance">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/images/logo da Agencia Soluciona.jpg">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Grupo Soluciona | Transforme Suas Vendas em Resultados Extraordinários">
+    <meta property="og:description" content="Agência especializada em estratégias de vendas e marketing digital. Transformamos empresas em máquinas de vendas.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://agenciasoluciona.com.br/">
+    <meta property="og:image" content="../assets/images/logo da Agencia Soluciona.jpg">
+
+    <!-- Tailwind CSS (build local purged) -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+    <!-- Google Fonts - Poppins (async para não bloquear render) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Inter:wght@400;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"></noscript>
+
+
+    <!-- Meta Pixel Code (diferido para não bloquear render) -->
+    <script>
+    window.addEventListener('load', function() {
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1856340011538331');
+        fbq('track', 'PageView');
+    });
+    </script>
+    <!-- End Meta Pixel Code -->
+
+
+    <!-- Custom Styles -->
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg, #000000 0%, #333333 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .shadow-elegant {
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .btn-primary {
+            background: #000000;
+            transition: all 0.3s ease;
+            border: 2px solid #000000;
+        }
+
+        .btn-primary:hover {
+            background: #ffffff;
+            color: #000000;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid #000000;
+            color: #000000;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background: #000000;
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #000000;
+            box-shadow: 0 0 0 3px rgba(0,0,0,0.1);
+        }
+
+        .client-logo-container {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            overflow: hidden;
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            border: 4px solid #f0f0f0;
+            transition: all 0.3s ease;
+            position: relative;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .client-logo-container:hover {
+            transform: scale(1.05);
+            border-color: #000;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+        }
+
+        .client-logo {
+            max-width: 70%;
+            max-height: 70%;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+            border-radius: 50%;
+        }
+
+        .client-logo-container:hover .client-logo {
+            filter: grayscale(0%);
+            opacity: 1;
+            transform: scale(1.1);
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .scrollbar-hide {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+
+        /* Elegant gradients */
+        .gradient-text {
+            background: linear-gradient(135deg, #000000 0%, #404040 50%, #000000 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .gradient-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+            border: 1px solid #e5e7eb;
+        }
+
+        .gradient-dark {
+            background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+        }
+
+        .gradient-number {
+            background: linear-gradient(135deg, #000000 0%, #404040 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+        }
+
+        .gradient-number::before {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+            border-radius: 1px;
+        }
+
+        /* Fix horizontal scroll bug */
+        body {
+            overflow-x: hidden;
+        }
+
+        .trust-badges-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .trust-badges-scroll {
+            display: flex;
+            width: 200%;
+            animation: autoScroll 25s linear infinite;
+        }
+
+        @keyframes autoScroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .trust-badges-scroll:hover {
+            animation-play-state: paused;
+        }
+
+        /* Auto-scroll animation for client logos */
+        .clients-carousel-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .clients-carousel {
+            width: 200%;
+            animation: clientsScroll 30s linear infinite;
+        }
+
+        @keyframes clientsScroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .clients-carousel:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body class="bg-white text-black antialiased">
+
+    <!-- Header/Navigation -->
+    <header class="fixed w-full top-0 bg-white/95 backdrop-blur-md z-50 border-b border-gray-200">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <img src="../assets/images/logo da Agencia Soluciona.jpg" alt="Grupo Soluciona" class="h-10 w-auto object-contain bg-white p-1 rounded border border-gray-200" width="40" height="40" fetchpriority="high">
+                    <span class="text-xl font-bold text-black">Grupo Soluciona</span>
+                </div>
+                <button onclick="scrollToForm()" class="hidden md:block px-6 py-2.5 bg-black text-white rounded-full font-semibold hover:bg-white hover:text-black border-2 border-black transition">
+                    Análise Gratuita
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 md:pt-32 md:pb-20 bg-black">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto text-center">
+                <div class="inline-block px-6 py-2 bg-white text-black text-sm font-semibold rounded-full mb-6 animate-fade-in border border-gray-300 shadow-lg">
+                    🚀 RESULTADOS GARANTIDOS POR CONTRATO
+                </div>
+
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-6 animate-slide-up leading-tight">
+                    Sua empresa pode vender todos os dias
+                    <br class="hidden md:block">
+                    com uma <span class="underline decoration-green-500 decoration-4 underline-offset-4">estrutura comercial profissional</span>
+                </h1>
+
+                <p class="text-xl md:text-2xl text-gray-300 mb-10 animate-fade-in max-w-3xl mx-auto">
+                    Ajudamos empresas a organizar marketing, atendimento e vendas para gerar mais clientes,
+                    <span class="block mt-2">não perder oportunidades e aumentar o faturamento com consistência.</span>
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
+                    <button onclick="scrollToForm()" class="px-10 py-4 bg-white text-black rounded-full font-bold text-lg hover:bg-gray-100 transition transform hover:-translate-y-1 shadow-xl">
+                        SOLICITAR ANÁLISE GRATUITA
+                    </button>
+                    <button onclick="scrollToClients()" class="px-10 py-4 bg-transparent border-2 border-white text-white rounded-full font-bold text-lg hover:bg-white hover:text-black transition">
+                        Ver Casos de Sucesso
+                    </button>
+                </div>
+
+                <!-- Trust Badges Carousel -->
+                <div class="mt-12 trust-badges-container">
+                    <div class="trust-badges-scroll gap-8 items-center justify-center">
+                        <div class="flex items-center gap-3 whitespace-nowrap text-sm bg-gray-800 text-gray-200 px-6 py-3 rounded-full border border-gray-700 shadow-lg">
+                            <div class="w-2 h-2 bg-green-400 rounded-full flex-shrink-0"></div>
+                            <span class="font-medium">Garantia de Resultados</span>
+                        </div>
+                        <div class="flex items-center gap-3 whitespace-nowrap text-sm bg-gray-800 text-gray-200 px-6 py-3 rounded-full border border-gray-700 shadow-lg">
+                            <div class="w-2 h-2 bg-green-400 rounded-full flex-shrink-0"></div>
+                            <span class="font-medium">Suporte 24/7</span>
+                        </div>
+                        <div class="flex items-center gap-3 whitespace-nowrap text-sm bg-gray-800 text-gray-200 px-6 py-3 rounded-full border border-gray-700 shadow-lg">
+                            <div class="w-2 h-2 bg-green-400 rounded-full flex-shrink-0"></div>
+                            <span class="font-medium">+100 Empresas Atendidas</span>
+                        </div>
+                        <div class="flex items-center gap-3 whitespace-nowrap text-sm bg-gray-800 text-gray-200 px-6 py-3 rounded-full border border-gray-700 shadow-lg">
+                            <div class="w-2 h-2 bg-green-400 rounded-full flex-shrink-0"></div>
+                            <span class="font-medium">Metodologia Exclusiva</span>
+                        </div>
+                        <div class="flex items-center gap-3 whitespace-nowrap text-sm bg-gray-800 text-gray-200 px-6 py-3 rounded-full border border-gray-700 shadow-lg">
+                            <div class="w-2 h-2 bg-green-400 rounded-full flex-shrink-0"></div>
+                            <span class="font-medium">Resultados Comprovados</span>
+                        </div>
+                        <div class="flex items-center gap-3 whitespace-nowrap text-sm bg-gray-800 text-gray-200 px-6 py-3 rounded-full border border-gray-700 shadow-lg">
+                            <div class="w-2 h-2 bg-green-400 rounded-full flex-shrink-0"></div>
+                            <span class="font-medium">ROI Garantido 5x</span>
+                        </div>
+                        <!-- Duplicar para scroll infinito -->
+                        <div class="flex items-center gap-3 whitespace-nowrap text-sm bg-gray-800 text-gray-200 px-6 py-3 rounded-full border border-gray-700 shadow-lg">
+                            <div class="w-2 h-2 bg-green-400 rounded-full flex-shrink-0"></div>
+                            <span class="font-medium">Garantia de Resultados</span>
+                        </div>
+                        <div class="flex items-center gap-3 whitespace-nowrap text-sm bg-gray-800 text-gray-200 px-6 py-3 rounded-full border border-gray-700 shadow-lg">
+                            <div class="w-2 h-2 bg-green-400 rounded-full flex-shrink-0"></div>
+                            <span class="font-medium">Suporte 24/7</span>
+                        </div>
+                        <div class="flex items-center gap-3 whitespace-nowrap text-sm bg-gray-800 text-gray-200 px-6 py-3 rounded-full border border-gray-700 shadow-lg">
+                            <div class="w-2 h-2 bg-green-400 rounded-full flex-shrink-0"></div>
+                            <span class="font-medium">+100 Empresas Atendidas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Numbers/Metrics Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="animate-fade-in">
+                    <div class="text-4xl md:text-5xl font-black mb-3 gradient-number">312%</div>
+                    <div class="text-gray-600 font-medium">Aumento médio<br>em vendas</div>
+                </div>
+                <div class="animate-fade-in">
+                    <div class="text-4xl md:text-5xl font-black mb-3 gradient-number">100+</div>
+                    <div class="text-gray-600 font-medium">Empresas<br>transformadas</div>
+                </div>
+                <div class="animate-fade-in">
+                    <div class="text-4xl md:text-5xl font-black mb-3 gradient-number">R$45M</div>
+                    <div class="text-gray-600 font-medium">Gerados para<br>nossos clientes</div>
+                </div>
+                <div class="animate-fade-in">
+                    <div class="text-4xl md:text-5xl font-black mb-3 gradient-number">100%</div>
+                    <div class="text-gray-600 font-medium">Garantia de<br>resultados</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clients" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-black mb-4">
+                    Empresas Que Já <span class="relative inline-block font-black underline decoration-green-500 decoration-2 underline-offset-4">Multiplicaram</span> Suas Vendas
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Junte-se a dezenas de empresas que já transformaram seus resultados
+                </p>
+            </div>
+
+            <!-- Clients Logo Carousel -->
+            <div class="relative overflow-hidden clients-carousel-container">
+                <div class="clients-carousel flex gap-6 pb-4">
+                    <div class="flex-shrink-0 client-logo-container">
+                        <img src="../assets/images/PHOTO-2026-03-23-16-03-30.jpg" alt="Placidino Veículos" class="client-logo" width="140" height="140" loading="lazy">
+                    </div>
+                    <div class="flex-shrink-0 client-logo-container">
+                        <img src="../assets/images/PHOTO-2026-03-23-16-03-31.jpg" alt="Vantti" class="client-logo" width="140" height="140" loading="lazy">
+                    </div>
+                    <div class="flex-shrink-0 client-logo-container">
+                        <img src="../assets/images/PHOTO-2026-03-23-16-03-31(2).jpg" alt="Sagave Veículos" class="client-logo" width="140" height="140" loading="lazy">
+                    </div>
+                    <div class="flex-shrink-0 client-logo-container">
+                        <img src="../assets/images/PHOTO-2026-03-23-16-03-31(5).jpg" alt="Resende Regularização" class="client-logo" width="140" height="140" loading="lazy">
+                    </div>
+                    <div class="flex-shrink-0 client-logo-container">
+                        <img src="../assets/images/PHOTO-2026-03-23-16-03-30(1).jpg" alt="Cliente 5" class="client-logo" width="140" height="140" loading="lazy">
+                    </div>
+                    <div class="flex-shrink-0 client-logo-container">
+                        <img src="../assets/images/PHOTO-2026-03-23-16-03-31(7).jpg" alt="Cliente 6" class="client-logo" width="140" height="140" loading="lazy">
+                    </div>
+                    <div class="flex-shrink-0 client-logo-container">
+                        <img src="../assets/images/PHOTO-2026-03-23-16-03-31(10).jpg" alt="Cliente 7" class="client-logo" width="140" height="140" loading="lazy">
+                    </div>
+                    <div class="flex-shrink-0 client-logo-container">
+                        <img src="../assets/images/PHOTO-2026-03-23-16-03-31(6).jpg" alt="Cliente 8" class="client-logo" width="140" height="140" loading="lazy">
+                    </div>
+                    <div class="flex-shrink-0 client-logo-container">
+                        <img src="../assets/images/PHOTO-2026-03-23-16-03-31(3).jpg" alt="Cliente 9" class="client-logo" width="140" height="140" loading="lazy">
+                    </div>
+                    <div class="flex-shrink-0 client-logo-container">
+                        <img src="../assets/images/PHOTO-2026-03-23-16-03-31(4).jpg" alt="Cliente 10" class="client-logo" width="140" height="140" loading="lazy">
+                    </div>
+                    <div class="flex-shrink-0 client-logo-container">
+                        <img src="../assets/images/PHOTO-2026-03-23-16-03-31(8).jpg" alt="Cliente 11" class="client-logo" width="140" height="140" loading="lazy">
+                    </div>
+                    <div class="flex-shrink-0 client-logo-container">
+                        <img src="../assets/images/PHOTO-2026-03-23-16-03-31(9).jpg" alt="Cliente 12" class="client-logo" width="140" height="140" loading="lazy">
+                    </div>
+                    <div class="flex-shrink-0 client-logo-container">
+                        <img src="../assets/images/PHOTO-2026-03-23-16-03-31(11).jpg" alt="Cliente 13" class="client-logo" width="140" height="140" loading="lazy">
+                    </div>
+                    <div class="flex-shrink-0 client-logo-container">
+                        <img src="../assets/images/PHOTO-2026-03-23-16-03-31(12).jpg" alt="Cliente 14" class="client-logo" width="140" height="140" loading="lazy">
+                    </div>
+                    <div class="flex-shrink-0 client-logo-container">
+                        <img src="../assets/images/PHOTO-2026-03-23-16-03-30(3).jpg" alt="Cliente 15" class="client-logo" width="140" height="140" loading="lazy">
+                    </div>
+                    <!-- Duplicar para scroll infinito -->
+                    <div class="flex-shrink-0 client-logo-container">
+                        <img src="../assets/images/PHOTO-2026-03-23-16-03-30.jpg" alt="Placidino Veículos" class="client-logo" width="140" height="140" loading="lazy">
+                    </div>
+                    <div class="flex-shrink-0 client-logo-container">
+                        <img src="../assets/images/PHOTO-2026-03-23-16-03-31.jpg" alt="Vantti" class="client-logo" width="140" height="140" loading="lazy">
+                    </div>
+                    <div class="flex-shrink-0 client-logo-container">
+                        <img src="../assets/images/PHOTO-2026-03-23-16-03-31(2).jpg" alt="Sagave Veículos" class="client-logo" width="140" height="140" loading="lazy">
+                    </div>
+                    <div class="flex-shrink-0 client-logo-container">
+                        <img src="../assets/images/PHOTO-2026-03-23-16-03-31(5).jpg" alt="Resende Regularização" class="client-logo" width="140" height="140" loading="lazy">
+                    </div>
+                    <div class="flex-shrink-0 client-logo-container">
+                        <img src="../assets/images/PHOTO-2026-03-23-16-03-30(1).jpg" alt="Cliente 5" class="client-logo" width="140" height="140" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-20 bg-black text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-black mb-6">
+                            Conheça o Time Que Vai
+                            <span class="block mt-2 text-2xl md:text-3xl">Transformar Suas Vendas</span>
+                        </h2>
+                        <p class="text-lg text-gray-300 mb-6">
+                            Somos uma equipe de especialistas apaixonados por resultados. Cada membro do nosso time é cuidadosamente selecionado e treinado para entregar a excelência que sua empresa merece.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-3">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>8 especialistas dedicados ao seu sucesso</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Mais de 10 anos de experiência combinada</span>
+                            </div>
+                        </div>
+                        <button onclick="scrollToForm()" class="mt-8 px-8 py-3 bg-white text-black font-bold rounded-full hover:bg-gray-100 transition">
+                            Quero Conhecer a Metodologia
+                        </button>
+                    </div>
+                    <div class="relative">
+                        <img src="../assets/images/Equipe Agencia Soluciona.jpg" alt="Equipe Grupo Soluciona" class="rounded-2xl shadow-2xl w-full" width="665" height="486" loading="lazy">
+                        <div class="absolute -bottom-6 -right-6 bg-white text-black p-6 rounded-xl shadow-xl max-w-xs">
+                            <div class="text-3xl font-black mb-2">100%</div>
+                            <div class="text-sm">de clientes satisfeitos com nosso atendimento</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-black mb-4">
+                    O Grupo Soluciona Atua na <span class="relative inline-block font-black underline decoration-green-500 decoration-2 underline-offset-4">Estruturação Completa</span> do Comercial da Sua Empresa
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Organizamos todo seu processo comercial em 4 pilares fundamentais
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold border-4 border-green-500">
+                        1
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Organização de Leads</h3>
+                    <p class="text-gray-600">
+                        Estruturamos todo seu processo de captação, qualificação e nutrição de leads para não perder nenhuma oportunidade
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold border-4 border-green-500">
+                        2
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">CRM com Funil de Vendas</h3>
+                    <p class="text-gray-600">
+                        Implementamos um sistema completo para controlar cada etapa da venda e aumentar sua taxa de conversão
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold border-4 border-green-500">
+                        3
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Estratégias para Geração de Novos Clientes</h3>
+                    <p class="text-gray-600">
+                        Criamos campanhas e processos para atrair constantemente novos clientes qualificados para seu negócio
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold border-4 border-green-500">
+                        4
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Acompanhamento Comercial</h3>
+                    <p class="text-gray-600">
+                        Monitoramos e otimizamos continuamente seus resultados com relatórios detalhados e ajustes estratégicos
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-black mb-4">
+                    O Que Você Vai Conquistar
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+                    <div class="w-12 h-12 bg-black rounded-lg flex items-center justify-center mb-4 border-2 border-green-500">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Aumento de Vendas</h3>
+                    <p class="text-gray-600">Crescimento consistente e sustentável do seu faturamento</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+                    <div class="w-12 h-12 bg-black rounded-lg flex items-center justify-center mb-4 border-2 border-green-500">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">ROI Garantido</h3>
+                    <p class="text-gray-600">Retorno mínimo de 5x o investimento ou devolvemos seu dinheiro</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+                    <div class="w-12 h-12 bg-black rounded-lg flex items-center justify-center mb-4 border-2 border-green-500">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Time Capacitado</h3>
+                    <p class="text-gray-600">Sua equipe dominando técnicas avançadas de vendas</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+                    <div class="w-12 h-12 bg-black rounded-lg flex items-center justify-center mb-4 border-2 border-green-500">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Processos Otimizados</h3>
+                    <p class="text-gray-600">Sistema de vendas automatizado e escalável</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+                    <div class="w-12 h-12 bg-black rounded-lg flex items-center justify-center mb-4 border-2 border-green-500">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Resultados Rápidos</h3>
+                    <p class="text-gray-600">Primeiros resultados visíveis em apenas 30 dias</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+                    <div class="w-12 h-12 bg-black rounded-lg flex items-center justify-center mb-4 border-2 border-green-500">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Suporte Contínuo</h3>
+                    <p class="text-gray-600">Acompanhamento diário com nossos especialistas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA/Form Section -->
+    <section id="form" class="py-20 gradient-bg">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto bg-white rounded-3xl shadow-2xl p-8 md:p-12">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl md:text-4xl font-black mb-4">
+                        Solicite uma <span class="underline decoration-green-500 decoration-4 underline-offset-4">Análise Gratuita</span>
+                        <span class="block text-2xl md:text-3xl mt-2">e veja como podemos estruturar o comercial da sua empresa</span>
+                    </h2>
+                    <p class="text-gray-600 text-lg">
+                        Diagnóstico completo <strong>sem custo</strong> para sua empresa
+                    </p>
+                    <div class="mt-4 inline-block px-4 py-2 bg-red-100 text-red-600 rounded-full text-sm font-semibold">
+                        ⚠️ Últimas 2 vagas restantes
+                    </div>
+                </div>
+
+                <form id="captureForm" class="space-y-5">
+                    <input type="hidden" name="source" id="source" value="veiculos">
+                    <div>
+                        <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">
+                            Nome Completo *
+                        </label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required
+                            class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition"
+                            placeholder="Seu nome completo"
+                        >
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-5">
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
+                                E-mail Corporativo *
+                            </label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition"
+                                placeholder="seu@email.com"
+                            >
+                        </div>
+
+                        <div>
+                            <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">
+                                WhatsApp *
+                            </label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                required
+                                class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition"
+                                placeholder="(11) 98765-4321"
+                            >
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="company" class="block text-sm font-semibold text-gray-700 mb-2">
+                            Nome da Empresa *
+                        </label>
+                        <input
+                            type="text"
+                            id="company"
+                            name="company"
+                            required
+                            class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition"
+                            placeholder="Sua empresa"
+                        >
+                    </div>
+
+                    <div>
+                        <label for="revenue" class="block text-sm font-semibold text-gray-700 mb-2">
+                            Faturamento Mensal *
+                        </label>
+                        <select
+                            id="revenue"
+                            name="revenue"
+                            required
+                            class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition"
+                        >
+                            <option value="">Selecione...</option>
+                            <option value="0-50k">Até R$ 50 mil</option>
+                            <option value="50k-100k">R$ 50 mil - R$ 100 mil</option>
+                            <option value="100k-500k">R$ 100 mil - R$ 500 mil</option>
+                            <option value="500k-1m">R$ 500 mil - R$ 1 milhão</option>
+                            <option value="1m+">Acima de R$ 1 milhão</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="challenge" class="block text-sm font-semibold text-gray-700 mb-2">
+                            Principal Desafio em Vendas *
+                        </label>
+                        <textarea
+                            id="challenge"
+                            name="challenge"
+                            required
+                            rows="3"
+                            class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition"
+                            placeholder="Descreva brevemente seu principal desafio..."
+                        ></textarea>
+                    </div>
+
+                    <button
+                        type="submit"
+                        id="submitBtn"
+                        class="w-full py-4 bg-black text-white font-bold text-lg rounded-lg hover:bg-gray-800 transition transform hover:-translate-y-1 shadow-lg flex items-center justify-center gap-3"
+                    >
+                        <span id="submitBtnText">GARANTIR MINHA VAGA AGORA</span>
+                        <svg id="submitSpinner" class="hidden animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"></path>
+                        </svg>
+                    </button>
+                    <div id="formSuccess" class="hidden text-center py-4 px-6 bg-green-50 border border-green-200 rounded-lg">
+                        <p class="text-green-700 font-bold text-lg">✅ Vaga garantida!</p>
+                        <p class="text-green-600 text-sm mt-1">Em instantes um especialista entrará em contato via WhatsApp.</p>
+                    </div>
+
+                    <p class="text-xs text-center text-gray-500 mt-4">
+                        🔒 Seus dados estão seguros e não serão compartilhados.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-block p-8 bg-green-50 rounded-2xl border-2 border-green-200">
+                    <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-black mb-4">
+                        Garantia de Satisfação
+                    </h3>
+                    <p class="text-lg text-gray-700 mb-4">
+                        Comprometimento total com seus resultados,<br>
+                        <strong>devolvemos 100% do seu investimento.</strong>
+                    </p>
+                    <p class="text-sm text-gray-600">
+                        Simples assim. Sem letras miúdas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-black text-center mb-12">
+                    Perguntas Frequentes
+                </h2>
+
+                <div class="space-y-4">
+<details class="bg-white rounded-lg shadow-md p-6 cursor-pointer">
+                        <summary class="font-bold text-lg">Funciona para qualquer tipo de empresa?</summary>
+                        <p class="mt-4 text-gray-600">
+                            Nossa metodologia é adaptada para empresas B2B e B2C que faturam acima de R$ 30 mil/mês e querem escalar rapidamente.
+                        </p>
+                    </details>
+
+<details class="bg-white rounded-lg shadow-md p-6 cursor-pointer">
+                        <summary class="font-bold text-lg">Preciso ter uma equipe de vendas grande?</summary>
+                        <p class="mt-4 text-gray-600">
+                            Não. Nossa metodologia funciona tanto para empresas com 1 vendedor quanto para empresas com 100+ vendedores.
+                        </p>
+                    </details>
+
+                    <details class="bg-white rounded-lg shadow-md p-6 cursor-pointer">
+                        <summary class="font-bold text-lg">Qual o investimento necessário?</summary>
+                        <p class="mt-4 text-gray-600">
+                            O investimento varia de acordo com o tamanho da sua empresa e objetivos. No diagnóstico gratuito apresentamos todas as opções.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-20 bg-black text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-5xl font-black mb-6">
+                Você Está a 1 Clique de
+                <span class="block mt-2">Aumentar Suas Vendas</span>
+            </h2>
+            <p class="text-xl mb-8 text-gray-300">
+                Não deixe seus concorrentes pegarem sua vaga.
+            </p>
+            <button type="button" onclick="scrollToForm()" class="px-12 py-5 bg-white text-black font-black text-xl rounded-full hover:bg-gray-100 transition transform hover:-translate-y-1 shadow-2xl">
+                GARANTIR MINHA VAGA AGORA
+            </button>
+            <p class="mt-6 text-sm text-gray-400">
+                ⏰ Oferta válida apenas para os próximos 5 empresários
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <div class="flex items-center justify-center space-x-3 mb-4">
+                    <img src="../assets/images/logo da Agencia Soluciona.jpg" alt="Grupo Soluciona" class="h-10 w-auto object-contain bg-white p-1 rounded border border-gray-600" width="40" height="40" loading="lazy">
+                    <span class="text-lg font-bold">Grupo Soluciona</span>
+                </div>
+                <p class="text-gray-400 text-sm mb-2">
+                    Transformando empresas em máquinas de vendas desde 2020
+                </p>
+                <p class="text-gray-500 text-xs">
+                    © 2024 Grupo Soluciona. Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Popup -->
+    <div id="whatsappPopup" class="fixed inset-0 z-50 flex items-center justify-center hidden">
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="closeWhatsappPopup()"></div>
+        <div class="relative bg-white rounded-2xl shadow-2xl p-8 max-w-sm w-full mx-4 text-center animate-slide-up">
+            <button onclick="closeWhatsappPopup()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+            </div>
+            <h3 class="text-2xl font-black mb-2">Cadastro realizado!</h3>
+            <p class="text-gray-600 mb-6">Quer falar agora com um especialista e acelerar o processo?</p>
+            <a href="https://wa.me/5563999195523?text=Ol%C3%A1%2C%20acabei%20de%20me%20cadastrar%20no%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank"
+               class="flex items-center justify-center gap-3 w-full py-4 bg-green-500 hover:bg-green-600 text-white font-bold text-lg rounded-xl transition transform hover:-translate-y-1 shadow-lg">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                </svg>
+                Falar no WhatsApp agora
+            </a>
+            <button onclick="closeWhatsappPopup()" class="mt-4 text-sm text-gray-400 hover:text-gray-600 transition underline">
+                Não, vou aguardar o contato
+            </button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Fecha popup WhatsApp
+        function closeWhatsappPopup() {
+            document.getElementById('whatsappPopup').classList.add('hidden');
+        }
+
+        // Fecha popup ao pressionar ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeWhatsappPopup();
+        });
+
+        // Scroll suave para formulário
+        function scrollToForm() {
+            document.getElementById('form').scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        }
+
+        // Scroll para clientes
+        function scrollToClients() {
+            document.getElementById('clients').scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        }
+
+        // Máscara para telefone
+        document.getElementById('phone').addEventListener('input', function (e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 0) {
+                if (value.length <= 11) {
+                    value = value.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
+                }
+                e.target.value = value;
+            }
+        });
+
+        // Envio do formulário
+        document.getElementById('captureForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const submitBtn = document.getElementById('submitBtn');
+            const submitBtnText = document.getElementById('submitBtnText');
+            const spinner = document.getElementById('submitSpinner');
+            const formSuccess = document.getElementById('formSuccess');
+
+            // Iniciar animação
+            submitBtnText.textContent = 'Enviando...';
+            spinner.classList.remove('hidden');
+            submitBtn.disabled = true;
+            submitBtn.classList.add('opacity-75', 'cursor-not-allowed');
+
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                company: document.getElementById('company').value,
+                revenue: document.getElementById('revenue').value,
+                challenge: document.getElementById('challenge').value,
+                source: document.getElementById('source').value
+            };
+
+            const SHEET_URL = 'https://script.google.com/macros/s/AKfycbytMgTNg5j8su_fm5PqT1m-kMBVh-WNh9g6m_ICHxzA3rCjqdlrLnGSgIYNu1D9_G4e/exec';
+
+            // Envia via GET com parâmetros na URL (mais confiável com Google Apps Script)
+            var params = new URLSearchParams(formData).toString();
+            fetch(SHEET_URL + '?' + params, {
+                method: 'GET',
+                mode: 'no-cors'
+            }).catch(function(err) { console.error('Erro ao enviar:', err); });
+
+            // Mostra sucesso e abre popup WhatsApp
+            setTimeout(function() {
+                submitBtn.classList.add('hidden');
+                formSuccess.classList.remove('hidden');
+                document.getElementById('captureForm').reset();
+                document.getElementById('whatsappPopup').classList.remove('hidden');
+            }, 800);
+        });
+
+        // Animação ao scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observar elementos com animação
+        document.querySelectorAll('.animate-fade-in, .animate-slide-up').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.6s ease-out';
+            observer.observe(el);
+        });
+
+        // Contador de urgência
+        let spotsLeft = 2;
+        setInterval(() => {
+            if (Math.random() > 0.7 && spotsLeft > 0) {
+                spotsLeft--;
+                if (spotsLeft === 1) {
+                    document.querySelector('.text-red-600').innerHTML = '⚠️ Última vaga disponível!';
+                } else if (spotsLeft === 0) {
+                    document.querySelector('.text-red-600').innerHTML = '🔴 Vagas esgotadas - Lista de espera';
+                }
+            }
+        }, 30000);
+    </script>
+</body>
+</html>
