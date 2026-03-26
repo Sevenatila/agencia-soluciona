@@ -959,20 +959,14 @@
                 challenge: document.getElementById('challenge').value
             };
 
-            const SHEET_URL = 'https://script.google.com/macros/s/AKfycbwmlrqQcFedGsHz4zP7yEWKkay6o3FNn-vFCLljZt4S2MfH_GE5ZQapEku7lcWAZ27Q/exec';
+            const SHEET_URL = 'https://script.google.com/macros/s/AKfycbzre7TaCWeyHCBMuw5FpBHP6QHtpVBmaPFRQcuf2coEw-Ok6C4HzW-XKpBvhbwHibm4/exec';
 
-            // Envia via sendBeacon (garante envio mesmo ao fechar a página)
-            var payload = JSON.stringify(formData);
-            if (navigator.sendBeacon) {
-                navigator.sendBeacon(SHEET_URL, new Blob([payload], { type: 'application/json' }));
-            } else {
-                fetch(SHEET_URL, {
-                    method: 'POST',
-                    mode: 'no-cors',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: payload
-                }).catch(function(err) { console.error('Erro ao enviar:', err); });
-            }
+            // Envia via GET com parâmetros na URL (mais confiável com Google Apps Script)
+            var params = new URLSearchParams(formData).toString();
+            fetch(SHEET_URL + '?' + params, {
+                method: 'GET',
+                mode: 'no-cors'
+            }).catch(function(err) { console.error('Erro ao enviar:', err); });
 
             // Mostra sucesso imediatamente
             setTimeout(function() {
