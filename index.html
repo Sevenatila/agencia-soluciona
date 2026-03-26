@@ -643,6 +643,7 @@
                 </div>
 
                 <form id="captureForm" class="space-y-5">
+                    <input type="hidden" name="source" id="source" value="grupo">
                     <div>
                         <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">
                             Nome Completo *
@@ -943,10 +944,11 @@
                 phone: document.getElementById('phone').value,
                 company: document.getElementById('company').value,
                 revenue: document.getElementById('revenue').value,
-                challenge: document.getElementById('challenge').value
+                challenge: document.getElementById('challenge').value,
+                source: document.getElementById('source').value
             };
 
-            const SHEET_URL = 'https://script.google.com/macros/s/AKfycbzre7TaCWeyHCBMuw5FpBHP6QHtpVBmaPFRQcuf2coEw-Ok6C4HzW-XKpBvhbwHibm4/exec';
+            const SHEET_URL = 'https://script.google.com/macros/s/AKfycbytMgTNg5j8su_fm5PqT1m-kMBVh-WNh9g6m_ICHxzA3rCjqdlrLnGSgIYNu1D9_G4e/exec';
 
             // Envia via GET com parâmetros na URL (mais confiável com Google Apps Script)
             var params = new URLSearchParams(formData).toString();
