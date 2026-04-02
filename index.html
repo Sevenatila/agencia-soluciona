@@ -23,8 +23,8 @@
     <!-- Google Fonts - Poppins (async para não bloquear render) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Inter:wght@400;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
 
 
     <!-- Meta Pixel Code (diferido para não bloquear render) -->
@@ -49,10 +49,18 @@
     <style>
         * {
             font-family: 'Poppins', sans-serif;
+            font-weight: 400;
         }
 
         html {
             scroll-behavior: smooth;
+            font-size: 14px;
+        }
+
+        body {
+            font-weight: 400;
+            line-height: 1.4;
+            color: rgba(0,0,0,0.87);
         }
 
         .gradient-bg {
@@ -274,29 +282,29 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="pt-24 pb-16 md:pt-32 md:pb-20 bg-black">
+    <section class="pt-16 pb-12 md:pt-24 md:pb-16 bg-black">
         <div class="container mx-auto px-4">
             <div class="max-w-5xl mx-auto text-center">
                 <div class="inline-block px-6 py-2 bg-white text-black text-sm font-semibold rounded-full mb-6 animate-fade-in border border-gray-300 shadow-lg">
                     🚀 RESULTADOS GARANTIDOS POR CONTRATO
                 </div>
 
-                <h1 class="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-6 animate-slide-up leading-tight">
+                <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4 animate-slide-up leading-tight">
                     Sua empresa pode vender todos os dias
                     <br class="hidden md:block">
                     com uma <span class="underline decoration-green-500 decoration-4 underline-offset-4">estrutura comercial profissional</span>
                 </h1>
 
-                <p class="text-xl md:text-2xl text-gray-300 mb-10 animate-fade-in max-w-3xl mx-auto">
+                <p class="text-lg md:text-xl text-gray-300 mb-8 animate-fade-in max-w-3xl mx-auto">
                     Ajudamos empresas a organizar marketing, atendimento e vendas para gerar mais clientes,
-                    <span class="block mt-2">não perder oportunidades e aumentar o faturamento com consistência.</span>
+                    <span class="block mt-1">não perder oportunidades e aumentar o faturamento com consistência.</span>
                 </p>
 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
-                    <button onclick="scrollToForm()" class="px-10 py-4 bg-white text-black rounded-full font-bold text-lg hover:bg-gray-100 transition transform hover:-translate-y-1 shadow-xl">
+                    <button onclick="scrollToForm()" class="px-8 py-3 bg-white text-black rounded-full font-semibold text-base hover:bg-gray-100 transition transform hover:-translate-y-1 shadow-xl">
                         SOLICITAR ANÁLISE GRATUITA
                     </button>
-                    <button onclick="scrollToClients()" class="px-10 py-4 bg-transparent border-2 border-white text-white rounded-full font-bold text-lg hover:bg-white hover:text-black transition">
+                    <button onclick="scrollToClients()" class="px-8 py-3 bg-transparent border border-white text-white rounded-full font-semibold text-base hover:bg-white hover:text-black transition">
                         Ver Casos de Sucesso
                     </button>
                 </div>
@@ -348,7 +356,7 @@
     </section>
 
     <!-- Numbers/Metrics Section -->
-    <section class="py-20 bg-gray-100">
+    <section class="py-16 bg-gray-100">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                 <div class="animate-fade-in">
@@ -372,13 +380,13 @@
     </section>
 
     <!-- Clients Section -->
-    <section id="clients" class="py-20 bg-gray-50">
+    <section id="clients" class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-black mb-4">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold mb-3">
                     Empresas Que Já <span class="relative inline-block font-black underline decoration-green-500 decoration-2 underline-offset-4">Multiplicaram</span> Suas Vendas
                 </h2>
-                <p class="text-xl text-gray-600">
+                <p class="text-lg text-gray-600">
                     Junte-se a dezenas de empresas que já transformaram seus resultados
                 </p>
             </div>
@@ -454,7 +462,7 @@
     </section>
 
     <!-- Team Section -->
-    <section class="py-20 bg-black text-white">
+    <section class="py-16 bg-black text-white">
         <div class="container mx-auto px-4">
             <div class="max-w-6xl mx-auto">
                 <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -497,13 +505,13 @@
     </section>
 
     <!-- How It Works -->
-    <section class="py-20 bg-white">
+    <section class="py-14 bg-white">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-black mb-4">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold mb-3">
                     O Grupo Soluciona Atua na <span class="relative inline-block font-black underline decoration-green-500 decoration-2 underline-offset-4">Estruturação Completa</span> do Comercial da Sua Empresa
                 </h2>
-                <p class="text-xl text-gray-600">
+                <p class="text-lg text-gray-600">
                     Organizamos todo seu processo comercial em 4 pilares fundamentais
                 </p>
             </div>
@@ -553,16 +561,16 @@
     </section>
 
     <!-- Benefits Section -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-14 bg-gray-50">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-black mb-4">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold mb-3">
                     O Que Você Vai Conquistar
                 </h2>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
                     <div class="w-12 h-12 bg-black rounded-lg flex items-center justify-center mb-4 border-2 border-green-500">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
@@ -572,7 +580,7 @@
                     <p class="text-gray-600">Crescimento consistente e sustentável do seu faturamento</p>
                 </div>
 
-                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
                     <div class="w-12 h-12 bg-black rounded-lg flex items-center justify-center mb-4 border-2 border-green-500">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -582,7 +590,7 @@
                     <p class="text-gray-600">Retorno mínimo de 5x o investimento ou devolvemos seu dinheiro</p>
                 </div>
 
-                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
                     <div class="w-12 h-12 bg-black rounded-lg flex items-center justify-center mb-4 border-2 border-green-500">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
@@ -592,7 +600,7 @@
                     <p class="text-gray-600">Sua equipe dominando técnicas avançadas de vendas</p>
                 </div>
 
-                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
                     <div class="w-12 h-12 bg-black rounded-lg flex items-center justify-center mb-4 border-2 border-green-500">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
@@ -602,7 +610,7 @@
                     <p class="text-gray-600">Sistema de vendas automatizado e escalável</p>
                 </div>
 
-                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
                     <div class="w-12 h-12 bg-black rounded-lg flex items-center justify-center mb-4 border-2 border-green-500">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -612,7 +620,7 @@
                     <p class="text-gray-600">Primeiros resultados visíveis em apenas 30 dias</p>
                 </div>
 
-                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
                     <div class="w-12 h-12 bg-black rounded-lg flex items-center justify-center mb-4 border-2 border-green-500">
                         <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
@@ -626,11 +634,11 @@
     </section>
 
     <!-- CTA/Form Section -->
-    <section id="form" class="py-20 gradient-bg">
+    <section id="form" class="py-16 gradient-bg">
         <div class="container mx-auto px-4">
             <div class="max-w-2xl mx-auto bg-white rounded-3xl shadow-2xl p-8 md:p-12">
                 <div class="text-center mb-8">
-                    <h2 class="text-3xl md:text-4xl font-black mb-4">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-3">
                         Solicite uma <span class="underline decoration-green-500 decoration-4 underline-offset-4">Análise Gratuita</span>
                         <span class="block text-2xl md:text-3xl mt-2">e veja como podemos estruturar o comercial da sua empresa</span>
                     </h2>
@@ -642,10 +650,10 @@
                     </div>
                 </div>
 
-                <form id="captureForm" class="space-y-5">
+                <form id="captureForm" class="space-y-4">
                     <input type="hidden" name="source" id="source" value="grupo">
                     <div>
-                        <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">
                             Nome Completo *
                         </label>
                         <input
@@ -653,14 +661,14 @@
                             id="name"
                             name="name"
                             required
-                            class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition"
+                            class="w-full px-3 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-black focus:border-transparent transition"
                             placeholder="Seu nome completo"
                         >
                     </div>
 
                     <div class="grid md:grid-cols-2 gap-5">
                         <div>
-                            <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
                                 E-mail Corporativo *
                             </label>
                             <input
@@ -668,13 +676,13 @@
                                 id="email"
                                 name="email"
                                 required
-                                class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition"
+                                class="w-full px-3 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-black focus:border-transparent transition"
                                 placeholder="seu@email.com"
                             >
                         </div>
 
                         <div>
-                            <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">
                                 WhatsApp *
                             </label>
                             <input
@@ -682,14 +690,14 @@
                                 id="phone"
                                 name="phone"
                                 required
-                                class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition"
+                                class="w-full px-3 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-black focus:border-transparent transition"
                                 placeholder="(11) 98765-4321"
                             >
                         </div>
                     </div>
 
                     <div>
-                        <label for="company" class="block text-sm font-semibold text-gray-700 mb-2">
+                        <label for="company" class="block text-sm font-medium text-gray-700 mb-1">
                             Nome da Empresa *
                         </label>
                         <input
@@ -697,20 +705,20 @@
                             id="company"
                             name="company"
                             required
-                            class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition"
+                            class="w-full px-3 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-black focus:border-transparent transition"
                             placeholder="Sua empresa"
                         >
                     </div>
 
                     <div>
-                        <label for="revenue" class="block text-sm font-semibold text-gray-700 mb-2">
+                        <label for="revenue" class="block text-sm font-medium text-gray-700 mb-1">
                             Faturamento Mensal *
                         </label>
                         <select
                             id="revenue"
                             name="revenue"
                             required
-                            class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition"
+                            class="w-full px-3 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-black focus:border-transparent transition"
                         >
                             <option value="">Selecione...</option>
                             <option value="0-50k">Até R$ 50 mil</option>
@@ -722,7 +730,7 @@
                     </div>
 
                     <div>
-                        <label for="challenge" class="block text-sm font-semibold text-gray-700 mb-2">
+                        <label for="challenge" class="block text-sm font-medium text-gray-700 mb-1">
                             Principal Desafio em Vendas *
                         </label>
                         <textarea
@@ -730,7 +738,7 @@
                             name="challenge"
                             required
                             rows="3"
-                            class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:border-transparent transition"
+                            class="w-full px-3 py-2 border border-gray-300 rounded focus:ring-2 focus:ring-black focus:border-transparent transition"
                             placeholder="Descreva brevemente seu principal desafio..."
                         ></textarea>
                     </div>
@@ -738,7 +746,7 @@
                     <button
                         type="submit"
                         id="submitBtn"
-                        class="w-full py-4 bg-black text-white font-bold text-lg rounded-lg hover:bg-gray-800 transition transform hover:-translate-y-1 shadow-lg flex items-center justify-center gap-3"
+                        class="w-full py-3 bg-black text-white font-semibold text-base rounded hover:bg-gray-800 transition transform hover:-translate-y-1 shadow-lg flex items-center justify-center gap-3"
                     >
                         <span id="submitBtnText">GARANTIR MINHA VAGA AGORA</span>
                         <svg id="submitSpinner" class="hidden animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
@@ -760,7 +768,7 @@
     </section>
 
     <!-- Guarantee Section -->
-    <section class="py-20 bg-white">
+    <section class="py-14 bg-white">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto text-center">
                 <div class="inline-block p-8 bg-green-50 rounded-2xl border-2 border-green-200">
@@ -785,7 +793,7 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-14 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="max-w-3xl mx-auto">
                 <h2 class="text-3xl md:text-4xl font-black text-center mb-12">
@@ -819,7 +827,7 @@
     </section>
 
     <!-- Final CTA -->
-    <section class="py-20 bg-black text-white">
+    <section class="py-16 bg-black text-white">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-5xl font-black mb-6">
                 Você Está a 1 Clique de
