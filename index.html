@@ -259,34 +259,7 @@
 
         /* Carousel não pausa no hover - removido pause */
 
-        /* Navigation arrows for carousel */
-        .carousel-nav {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: rgba(0, 0, 0, 0.7);
-            color: white;
-            border: none;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 10;
-            transition: background 0.3s ease;
-        }
-        .carousel-nav:hover {
-            background: rgba(0, 0, 0, 0.9);
-        }
-        .carousel-nav.prev {
-            left: 20px;
-        }
-        .carousel-nav.next {
-            right: 20px;
-        }
+        /* Setas removidas conforme solicitado */
     </style>
 </head>
 <body class="bg-gray-900 text-white antialiased">
@@ -389,9 +362,6 @@
     <section id="clients" class="py-16 bg-gray-900">
         <!-- Clients Logo Carousel - Full width -->
         <div class="relative overflow-hidden clients-carousel-container">
-            <!-- Navigation arrows -->
-            <button class="carousel-nav prev" onclick="moveCarousel(-1)">←</button>
-            <button class="carousel-nav next" onclick="moveCarousel(1)">→</button>
             <div class="clients-carousel flex gap-6 pb-4">
                     <!-- Logos originais -->
                     <div class="flex-shrink-0 client-logo-container">
@@ -1067,32 +1037,6 @@
         }, 30000);
     </script>
 
-    <!-- Carousel navigation script -->
-    <script>
-        let currentPosition = 0;
-        const carousel = document.querySelector('.clients-carousel');
-
-        function moveCarousel(direction) {
-            const logoWidth = 140 + 24; // logo width + gap
-            const containerWidth = document.querySelector('.clients-carousel-container').offsetWidth;
-            const maxPosition = -(logoWidth * 8); // Adjust based on number of visible logos
-
-            currentPosition += direction * logoWidth * 2; // Move 2 logos at a time
-
-            // Reset position for infinite scroll
-            if (currentPosition > 0) {
-                currentPosition = maxPosition;
-            } else if (currentPosition < maxPosition) {
-                currentPosition = 0;
-            }
-
-            carousel.style.transform = `translateX(${currentPosition}px)`;
-
-            // Resume animation after 2 seconds
-            setTimeout(() => {
-                carousel.style.transform = '';
-            }, 2000);
-        }
-    </script>
+    <!-- JavaScript das setas removido -->
 </body>
 </html>
