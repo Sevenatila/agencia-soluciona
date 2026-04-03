@@ -47,6 +47,10 @@
 
     <!-- Custom Styles -->
     <style>
+        :root {
+            --bg-section-color: #111827; /* Exata cor do bg-gray-900 Tailwind */
+        }
+
         * {
             font-family: 'Poppins', sans-serif;
             font-weight: 400;
@@ -257,12 +261,12 @@
 
         .clients-carousel-container::before {
             left: 0;
-            background: linear-gradient(to right, #1f2937 0%, rgba(31, 41, 55, 0.8) 40%, transparent 100%);
+            background: linear-gradient(to right, var(--bg-section-color) 0%, rgba(17, 24, 39, 0.8) 40%, transparent 100%);
         }
 
         .clients-carousel-container::after {
             right: 0;
-            background: linear-gradient(to left, #1f2937 0%, rgba(31, 41, 55, 0.8) 40%, transparent 100%);
+            background: linear-gradient(to left, var(--bg-section-color) 0%, rgba(17, 24, 39, 0.8) 40%, transparent 100%);
         }
 
         .clients-carousel {
