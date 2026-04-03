@@ -243,6 +243,28 @@
             position: relative;
         }
 
+        /* Gradiente lateral para esconder logos nas bordas */
+        .clients-carousel-container::before,
+        .clients-carousel-container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 150px;
+            z-index: 5;
+            pointer-events: none;
+        }
+
+        .clients-carousel-container::before {
+            left: 0;
+            background: linear-gradient(to right, #111827 0%, rgba(17, 24, 39, 0.8) 40%, transparent 100%);
+        }
+
+        .clients-carousel-container::after {
+            right: 0;
+            background: linear-gradient(to left, #111827 0%, rgba(17, 24, 39, 0.8) 40%, transparent 100%);
+        }
+
         .clients-carousel {
             width: 300%;
             animation: clientsScroll 12s linear infinite;
